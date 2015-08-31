@@ -52,6 +52,7 @@ module.exports = function (opts, cb) {
 		switch (platform) {
 			case 'darwin': arch = 'x64'; break;
 			case 'win32': arch = 'ia32'; break;
+			case 'win64': arch = 'x64'; platform = 'win32'; break;
 			case 'linux': arch = 'ia32'; break;
 		}
 	}
